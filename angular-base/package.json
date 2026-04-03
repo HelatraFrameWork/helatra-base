@@ -1,0 +1,4 @@
+{
+  "main": "../src/angular-base/index.js",
+  "types": "../src/angular-base/index.d.ts"
+}

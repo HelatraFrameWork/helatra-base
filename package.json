@@ -1,0 +1,73 @@
+{
+	"name": "@helatra/base",
+	"version": "1.0.0",
+	"description": "A common package of Helatra base libraries, methods and class definitions",
+	"author": "Helatra",
+	"license": "SEE LICENSE IN license",
+	"keywords": [
+		"ej2",
+		"hel-base",
+		"web-components",
+		"typescript",
+		"base",
+		"common",
+		"core",
+		"library",
+		"ajax",
+		"animation",
+		"internationalization",
+		"drag",
+		"drop",
+		"drag-drop",
+		"template",
+		"template-engine",
+		"rtl",
+		"right-to-left",
+		"persistence",
+		"state-persistence",
+		"theme",
+		"styles"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/HelatraFrameWork/hel-javascript-ui-controls.git"
+	},
+	"homepage": "https://www.helatra.com/javascript-ui-controls",
+	"main": "./src/index.ts",
+	"readme": "ReadMe.md",
+	"bin": {
+		"helatra-license": "bin/helatra-license.js"
+	},
+	"dependencies": {
+		"@helatra/icons": "*"
+	},
+	"devDependencies": {
+		"@types/chai": "^3.4.28",
+		"@types/jasmine": "2.8.22",
+		"@types/jasmine-ajax": "^3.1.27",
+		"@types/requirejs": "^2.1.26",
+		"es6-promise": "^3.2.1",
+		"gulp": "^3.9.1",
+		"gulp-sass": "^3.1.0",
+		"gulp-typescript": "^3.1.6",
+		"requirejs": "^2.3.3",
+		"typescript": "2.3.4",
+		"canteen": "^1.0.5",
+		"jasmine-ajax": "^3.3.1",
+		"jasmine-core": "^2.6.1",
+		"karma": "6.4.2",
+		"karma-chrome-launcher": "^2.2.0",
+		"karma-generic-preprocessor": "^1.1.0",
+		"karma-htmlfile-reporter": "^0.3.5",
+		"karma-jasmine": "^1.1.0",
+		"karma-jasmine-ajax": "^0.1.13",
+		"karma-requirejs": "^1.1.0",
+		"nedb": "^1.8.0",
+		"simple-odata-server": "^0.3.1"
+	},
+	"scripts": {
+		"build": "gulp build",
+		"test": "gulp test"
+	},
+	"types": "./src/index.ts"
+}

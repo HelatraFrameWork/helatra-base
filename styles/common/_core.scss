@@ -1,0 +1,113 @@
+@use './mixin' as *;
+
+@include export-module('base-core') {
+
+  .h-control,
+  .h-css,
+  .h-error {
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: $font-weight;
+  }
+
+  $white: #fff;
+  $background: #e82824;
+  $warning: #ffd800;
+  $yellow: #ff0;
+  .h-error {
+    @if $skin-name == 'Material3' {
+      color: rgba($error-font-color);
+    }
+    @else {
+      color: $error-font-color;
+    }
+  }
+
+  .h-control,
+  .h-control [class ^= 'e-'],
+  .h-control [class *= ' e-'] {
+    box-sizing: border-box;
+  }
+
+  .h-control:focus,
+  .h-control *:focus {
+    outline: none;
+  }
+
+  .h-rtl {
+    direction: rtl;
+    text-align: right;
+  }
+
+  .h-overlay {
+    background-color: $overlay-bg-color;
+    height: 100%;
+    opacity: .5;
+    pointer-events: none;
+    touch-action: none;
+    width: 100%;
+  }
+
+  .h-hidden {
+    display: none;
+  }
+
+  .h-blazor-hidden {
+    visibility: hidden;
+  }
+
+  .h-disabled {
+    background-image: none;
+    cursor: default;
+    opacity: .35;
+  }
+
+  .h-ul {
+    list-style-type: none;
+  }
+
+  .h-prevent-select {
+    user-select: none;
+  }
+
+  .h-warning {
+    @if $skin-name == 'Material3' {
+      color: rgba($warning-font-color);
+    }
+    @else {
+      color: $warning-font-color;
+    }
+  }
+
+  .h-success {
+    @if $skin-name == 'Material3' {
+      color: rgba($success-font-color);
+    }
+    @else {
+      color: $success-font-color;
+    }
+  }
+
+  .h-information {
+    @if $skin-name == 'Material3' {
+      color: rgba($information-font-color);
+    }
+    @else {
+      color: $information-font-color;
+    }
+  }
+
+  .h-block-touch {
+    touch-action: pinch-zoom;
+  }
+  .h-license {
+    color: $yellow;
+    text-decoration: none;
+  }
+  .h-license-banner {
+    position: absolute;
+    right: 10px;
+    top: 27%;
+    cursor: pointer;
+  }
+}
