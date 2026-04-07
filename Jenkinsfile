@@ -27,7 +27,18 @@ pipeline {
         stage('Checkout') {
             steps {
                 checkout scm
-                sh 'echo "Publishing ${PACKAGE_NAME}"'
+                sh 'echo "Building ${PACKAGE_NAME}"'
+            }
+        }
+
+        stage('Set Version') {
+            steps {
+                sh """
+                    . "\$NVM_DIR/nvm.sh"
+                    nvm use v20.20.0
+                    npm version 18.33.\${BUILD_NUMBER} --no-git-tag-version --allow-same-version
+                    echo "Version set to 18.33.\${BUILD_NUMBER}"
+                """
             }
         }
 
@@ -50,7 +61,7 @@ pipeline {
                         nvm use v20.20.0
                         NEXUS_AUTH=$(echo -n "$NEXUS_USER:$NEXUS_PASS" | base64)
                         npm config set //artifact.helatra.com/repository/npm-hosted/:_auth=$NEXUS_AUTH
-                        npm publish --registry $NEXUS_REGISTRY || echo "Package version already exists, skipping"
+                        npm publish --registry $NEXUS_REGISTRY
                     '''
                 }
             }
@@ -59,7 +70,7 @@ pipeline {
 
     post {
         success {
-            echo "Publish successful: ${PACKAGE_NAME}"
+            echo "Publish successful: ${PACKAGE_NAME}@18.33.\${BUILD_NUMBER}"
         }
         failure {
             echo "Publish failed: ${PACKAGE_NAME}"
