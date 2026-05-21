@@ -42,6 +42,26 @@ pipeline {
             }
         }
 
+        stage('Install Dependencies') {
+            steps {
+                sh '''
+                    . "$NVM_DIR/nvm.sh"
+                    nvm use v20.20.0
+                    npm install --legacy-peer-deps --registry $NEXUS_REGISTRY
+                '''
+            }
+        }
+
+        stage('Build Library') {
+            steps {
+                sh '''
+                    . "$NVM_DIR/nvm.sh"
+                    nvm use v20.20.0
+                    npm run build
+                '''
+            }
+        }
+
         stage('Publish to Nexus') {
             when {
                 anyOf {
@@ -59,6 +79,7 @@ pipeline {
                     sh '''
                         . "$NVM_DIR/nvm.sh"
                         nvm use v20.20.0
+                        cd dist
                         NEXUS_AUTH=$(echo -n "$NEXUS_USER:$NEXUS_PASS" | base64)
                         npm config set //artifact.helatra.com/repository/npm-hosted/:_auth=$NEXUS_AUTH
                         npm publish --registry $NEXUS_REGISTRY
