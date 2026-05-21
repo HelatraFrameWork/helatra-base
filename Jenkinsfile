@@ -4,6 +4,7 @@ pipeline {
     environment {
         PACKAGE_NAME = '@helatra/base'
         NEXUS_REGISTRY = 'https://artifact.helatra.com/repository/npm-hosted/'
+        NEXUS_INSTALL_REGISTRY = 'https://artifact.helatra.com/repository/npm-group/'
         NVM_DIR = '/home/jenkins/.nvm'
     }
 
@@ -19,7 +20,7 @@ pipeline {
 
     options {
         buildDiscarder(logRotator(numToKeepStr: '10'))
-        timeout(time: 15, unit: 'MINUTES')
+        timeout(time: 30, unit: 'MINUTES')
         disableConcurrentBuilds()
     }
 
@@ -53,10 +54,10 @@ pipeline {
                         . "$NVM_DIR/nvm.sh"
                         nvm use v20.20.0
                         NEXUS_AUTH=$(echo -n "$NEXUS_USER:$NEXUS_PASS" | base64)
-                        npm config set @helatra:registry $NEXUS_REGISTRY
+                        npm config set //artifact.helatra.com/repository/npm-group/:_auth=$NEXUS_AUTH
                         npm config set //artifact.helatra.com/repository/npm-hosted/:_auth=$NEXUS_AUTH
                         rm -f package-lock.json
-                        npm install --legacy-peer-deps --registry https://registry.npmjs.org/
+                        npm install --legacy-peer-deps --registry $NEXUS_INSTALL_REGISTRY
                     '''
                 }
             }
@@ -67,6 +68,7 @@ pipeline {
                 sh '''
                     . "$NVM_DIR/nvm.sh"
                     nvm use v20.20.0
+                    chmod +x node_modules/.bin/* 2>/dev/null || true
                     npm run build
                 '''
             }
