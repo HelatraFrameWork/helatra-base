@@ -44,11 +44,20 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh '''
-                    . "$NVM_DIR/nvm.sh"
-                    nvm use v20.20.0
-                    npm install --legacy-peer-deps --registry $NEXUS_REGISTRY
-                '''
+                withCredentials([usernamePassword(
+                    credentialsId: 'nexus-npm-credentials',
+                    usernameVariable: 'NEXUS_USER',
+                    passwordVariable: 'NEXUS_PASS'
+                )]) {
+                    sh '''
+                        . "$NVM_DIR/nvm.sh"
+                        nvm use v20.20.0
+                        NEXUS_AUTH=$(echo -n "$NEXUS_USER:$NEXUS_PASS" | base64)
+                        npm config set @helatra:registry $NEXUS_REGISTRY
+                        npm config set //artifact.helatra.com/repository/npm-hosted/:_auth=$NEXUS_AUTH
+                        npm install --legacy-peer-deps
+                    '''
+                }
             }
         }
 
