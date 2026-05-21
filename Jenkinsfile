@@ -55,6 +55,7 @@ pipeline {
                         NEXUS_AUTH=$(echo -n "$NEXUS_USER:$NEXUS_PASS" | base64)
                         npm config set @helatra:registry $NEXUS_REGISTRY
                         npm config set //artifact.helatra.com/repository/npm-hosted/:_auth=$NEXUS_AUTH
+                        rm -f package-lock.json
                         npm install --legacy-peer-deps
                     '''
                 }
