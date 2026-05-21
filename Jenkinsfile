@@ -36,8 +36,8 @@ pipeline {
                 sh """
                     . "\$NVM_DIR/nvm.sh"
                     nvm use v20.20.0
-                    npm version 18.33.\${BUILD_NUMBER} --no-git-tag-version --allow-same-version
-                    echo "Version set to 18.33.\${BUILD_NUMBER}"
+                    npm version 21.2.\${BUILD_NUMBER} --no-git-tag-version --allow-same-version
+                    echo "Version set to 21.2.\${BUILD_NUMBER}"
                 """
             }
         }
@@ -70,7 +70,7 @@ pipeline {
 
     post {
         success {
-            echo "Publish successful: ${PACKAGE_NAME}@18.33.\${BUILD_NUMBER}"
+            echo "Publish successful: ${PACKAGE_NAME}@21.2.\${BUILD_NUMBER}"
         }
         failure {
             echo "Publish failed: ${PACKAGE_NAME}"
