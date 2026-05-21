@@ -1,33 +1,26 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
-    "target": "es5",
-    "module": "amd",
-    "declaration": true,
-    "removeComments": false,
-    "noLib": false,
+    "baseUrl": "./",
     "experimentalDecorators": true,
+    "moduleResolution": "bundler",
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "ES2022",
+    "useDefineForClassFields": false,
+    "skipLibCheck": true,
+    "strict": false,
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "declaration": true,
     "sourceMap": true,
-    "pretty": true,
-    "allowUnreachableCode": false,
-    "allowUnusedLabels": false,
-    "noImplicitAny": true,
-    "noImplicitReturns": true,
-    "noImplicitUseStrict": false,
-    "noFallthroughCasesInSwitch": true,
-    "allowJs": false,
-    "noEmitOnError":true,
-    "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node",
-    "lib": ["es5", "es2015.promise", "dom"],
-    "types": ["jasmine","jasmine-ajax","requirejs","chai"],
-    "suppressImplicitAnyIndexErrors": true    
+    "lib": ["ES2022", "dom"]
   },
   "exclude": [
     "node_modules",
     "dist",
     "public",
     "coverage",
-    "test-report"   
-  ],
-  "compileOnSave": false
+    "test-report"
+  ]
 }
