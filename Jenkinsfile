@@ -56,7 +56,7 @@ pipeline {
                         npm config set @helatra:registry $NEXUS_REGISTRY
                         npm config set //artifact.helatra.com/repository/npm-hosted/:_auth=$NEXUS_AUTH
                         rm -f package-lock.json
-                        npm install --legacy-peer-deps
+                        npm install --legacy-peer-deps --registry https://registry.npmjs.org/
                     '''
                 }
             }
