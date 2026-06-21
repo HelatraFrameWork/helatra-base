@@ -6,7 +6,7 @@ $is-roboto-loaded: false !default;
 
 @if not $is-roboto-loaded {
   //sass-lint:disable no-url-protocols,no-url-domains
-  @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');// stylelint-disable-line no-invalid-position-at-import-rule
+  // External Google Fonts @import removed — fonts are self-hosted (CSP font-src 'self')
 }
 
 $font-family: 'Roboto', 'Segoe UI', 'GeezaPro', 'DejaVu Serif', 'sans-serif', '-apple-system', 'BlinkMacSystemFont' !default;
