@@ -612,7 +612,7 @@ describe('dateformat', () => {
             });
         })
     });
-    describe('EJ2-23457 Milliseconds format support for custom date returns proper value', ()=>{
+    describe('H2O-23457 Milliseconds format support for custom date returns proper value', ()=>{
         it('Milliseconds format support for custom date returns proper value',()=>{
             let date: Date = new Date('Thu Jul 16 2015 09:33:37 GMT+0530 (India Standard Time)');
             date.setMilliseconds(23);

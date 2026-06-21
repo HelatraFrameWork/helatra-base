@@ -11,7 +11,7 @@ import { Observer } from './observer';
  */
 export const onIntlChange: Observer = new Observer();
 /**
- * Specifies the default rtl status for EJ2 components.
+ * Specifies the default rtl status for H2O components.
  */
 export let rightToLeft: boolean = false;
 
@@ -274,7 +274,7 @@ export class Internationalization {
 }
 
 /**
- * Set the default culture to all EJ2 components
+ * Set the default culture to all H2O components
  *
  * @param {string} cultureName - Specifies the culture name to be set as default culture.
  * @returns {void} ?
@@ -285,7 +285,7 @@ export function setCulture(cultureName: string): void {
 }
 
 /**
- * Set the default currency code to all EJ2 components
+ * Set the default currency code to all H2O components
  *
  * @param {string} currencyCode Specifies the culture name to be set as default culture.
  * @returns {void} ?

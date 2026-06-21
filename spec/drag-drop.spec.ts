@@ -95,7 +95,7 @@ describe('draggable', () => {
             expect(instance.relativeYPosition).toBeUndefined();
             instance.intDestroy(mousedown);
         });
-        ///EJ2-4640-click event not triggered issue fixed.
+        ///H2O-4640-click event not triggered issue fixed.
         it('Mouse down event not preventing the click event  ', () => {
             let instance: Draggable = new Draggable(element);
             let clickSpy: jasmine.Spy = jasmine.createSpy('click');

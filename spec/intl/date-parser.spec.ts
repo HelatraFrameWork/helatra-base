@@ -502,7 +502,7 @@ describe('DateParser', () => {
             expect(monthDayMatch(result, eraDate)).toBeTruthy();
         });
     });
-    //EJ2-4536-milli second issue
+    //H2O-4536-milli second issue
     describe('Milli seconds value set to 0 for returned date value', () => {
         let maxMilliDate: Date = new Date('1/30/2016');
         it(' gy check milli seconds', () => {
@@ -901,13 +901,13 @@ describe('DateParser', () => {
             });
         })
     });
-    describe('EJ2-30137 Case insensitive date returns proper value',() => {
+    describe('H2O-30137 Case insensitive date returns proper value',() => {
        it('Case insensitive date returns proper value',()=>{
         let iFormatter: Date = DateParser.dateParser('en', { format:'dd MMM,yyyy' }, cldrData)('01 aug,2019');
         expect(iFormatter).not.toBeNull();
        });
     });
-    describe('EJ2-23457 Milliseconds format support for custom date returns proper value',() =>{
+    describe('H2O-23457 Milliseconds format support for custom date returns proper value',() =>{
         it('Milliseconds format support for custom date returns proper value',() =>{
             let iFormatter: Date = DateParser.dateParser('en', { format:'yyyy-MM-dd hh:mm:ss.fff'},cldrData)('2015-07-16 09:33:37.23');
             expect(DateFormat.dateFormat('en',{format:'dd/MMM/yyyy hh:mm:ss fff'},cldrData)(iFormatter)).toBe('16/Jul/2015 09:33:37 023');

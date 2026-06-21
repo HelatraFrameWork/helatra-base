@@ -113,7 +113,7 @@
 
 #### New Features
 
-- Provided the TypeScript 5 compatible support for the EJ2 components.
+- Provided the TypeScript 5 compatible support for the H2O components.
 
 ## 21.2.9 (2023-06-06)
 
@@ -228,7 +228,7 @@
 
 #### Bug Fixes
 
-- `#I421652` - The issue with the "gulp is added to the dependency package in the ej2 package" has been resolved.
+- `#I421652` - The issue with the "gulp is added to the dependency package in the h2o package" has been resolved.
 
 ## 20.3.47 (2022-09-29)
 
@@ -244,7 +244,7 @@
 
 #### New Features
 
-- Provided the TypeScript 4.7 compatible support for the EJ2 components.
+- Provided the TypeScript 4.7 compatible support for the H2O components.
 - Provided the option to register the license key by using the `npx` command. Follow these steps to register the license using the `npx` command:
 
 | The `npx` command |
@@ -437,8 +437,8 @@
 
 #### Breaking Changes
 
-- ej2 icons has been split-up based on theme names and icons moved to separate npm package ej2-icons
-- canvas and svg render base functionalities moved to [ej2-svg-base](https://www.npmjs.com/package/@helatra/ej2-svg-base) npm package
+- h2o icons has been split-up based on theme names and icons moved to separate npm package h2o-icons
+- canvas and svg render base functionalities moved to [h2o-svg-base](https://www.npmjs.com/package/@helatra/h2o-svg-base) npm package
 
 #### Bug Fixes
 

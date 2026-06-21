@@ -39,7 +39,7 @@ export abstract class Component<ElementType extends HTMLElement> extends Base<El
     // Root component instance.
     public root: any;
     private randomId: string = uniqueID();
-    public ej2StatePersistenceVersion: string;
+    public h2oStatePersistenceVersion: string;
     /**
      * Enable or disable persisting component's state between page reloads.
      *
@@ -151,7 +151,7 @@ export abstract class Component<ElementType extends HTMLElement> extends Base<El
     public getLocalData(): any {
         const eleId: string = this.getModuleName() + this.element.id;
         if (versionBasedStatePersistence) {
-            return window.localStorage.getItem(eleId + this.ej2StatePersistenceVersion);
+            return window.localStorage.getItem(eleId + this.h2oStatePersistenceVersion);
         } else {
             return window.localStorage.getItem(eleId);
         }
@@ -423,7 +423,7 @@ export abstract class Component<ElementType extends HTMLElement> extends Base<El
     private mergePersistData(): void {
         let data: string;
         if (versionBasedStatePersistence) {
-            data = window.localStorage.getItem(this.getModuleName() + this.element.id + this.ej2StatePersistenceVersion);
+            data = window.localStorage.getItem(this.getModuleName() + this.element.id + this.h2oStatePersistenceVersion);
         } else {
             data = window.localStorage.getItem(this.getModuleName() + this.element.id);
         }
@@ -435,7 +435,7 @@ export abstract class Component<ElementType extends HTMLElement> extends Base<El
         if (!this.isDestroyed) {
             if (versionBasedStatePersistence) {
                 window.localStorage.setItem(this.getModuleName() +
-                this.element.id + this.ej2StatePersistenceVersion, this.getPersistData());
+                this.element.id + this.h2oStatePersistenceVersion, this.getPersistData());
             } else {
                 window.localStorage.setItem(this.getModuleName() + this.element.id, this.getPersistData());
             }

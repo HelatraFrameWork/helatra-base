@@ -212,17 +212,17 @@
          expect(Util.formatUnit(100)).toEqual('100px');
      });
      describe('addInstance function', () => {
-         let ej2Instances: string = 'hel_instances';
+         let h2oInstances: string = 'hel_instances';
          let element: HTMLElement = createElement('p');
          it('adding by element', () => {
              let instance: Object = { 0: 'elem', 1: 'inst' };
              Util.addInstance(element, instance);
-             expect(element[ej2Instances]).toEqual([instance]);
+             expect(element[h2oInstances]).toEqual([instance]);
          });
          it('adding by selector', () => {
              let instance1: Object = { 0: 'selector' };
              Util.addInstance('p', instance1);
-             expect(select('p')[ej2Instances]).toEqual([instance1]);
+             expect(select('p')[h2oInstances]).toEqual([instance1]);
          });
      });
      describe('getInstance function', () => {

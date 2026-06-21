@@ -1,11 +1,11 @@
 {
   "name": "@helatra/base",
-  "version": "21.2.7",
+  "version": "21.2.24",
   "description": "A common package of Helatra base libraries, methods and class definitions",
   "author": "Helatra",
   "license": "SEE LICENSE IN license",
   "keywords": [
-    "ej2",
+    "h2o",
     "hel-base",
     "web-components",
     "typescript",

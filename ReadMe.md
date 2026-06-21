@@ -1,4 +1,4 @@
-# ej2-base
+# h2o-base
 
 A common package of Essential<sup>®</sup> JS 2 which contains base libraries, methods and class definitions.
 
@@ -8,7 +8,7 @@ A common package of Essential<sup>®</sup> JS 2 which contains base libraries, m
 
 ## Setup
 
-To install `ej2-base`, use the following command.
+To install `h2o-base`, use the following command.
 
 ```sh
 npm install @helatra/base
@@ -16,9 +16,9 @@ npm install @helatra/base
 
 ## Resources
 
-* [Getting Started](https://ej2.helatra.com/documentation/getting-started?utm_source=npm&utm_campaign=ej2-base)
-* [View Online Demos](https://ej2.helatra.com/demos/?utm_source=npm&utm_campaign=ej2-base)
-* [Product Page](https://www.helatra.com/products/javascript?utm_source=npm&utm_campaign=ej2-base)
+* [Getting Started](https://h2o.helatra.com/documentation/getting-started?utm_source=npm&utm_campaign=h2o-base)
+* [View Online Demos](https://h2o.helatra.com/demos/?utm_source=npm&utm_campaign=h2o-base)
+* [Product Page](https://www.helatra.com/products/javascript?utm_source=npm&utm_campaign=h2o-base)
 
 ## Framework highlights
 
@@ -40,7 +40,7 @@ All Essential<sup>®</sup> JS 2 controls are touch friendly and render adaptivel
 
 ### Stunning built-in themes
 
-Pixel-perfect built-in themes are available in material, bootstrap and fabric design. In addition, it comes with Accessible high-contrast theme and an online tool "[Theme Studio](https://ej2.helatra.com/themestudio/)" to customize the provided built-in themes.
+Pixel-perfect built-in themes are available in material, bootstrap and fabric design. In addition, it comes with Accessible high-contrast theme and an online tool "[Theme Studio](https://h2o.helatra.com/themestudio/)" to customize the provided built-in themes.
 
 ### Globalization simplified
 
@@ -54,21 +54,21 @@ With our commitment to at least four major updates per year, you receive the mos
 
 The Essential<sup>®</sup> JS 2 is also offered in following list of frameworks.
 
-* [Angular](https://www.helatra.com/products/angular?utm_source=npm&utm_campaign=ej2-base)
-* [React](https://www.helatra.com/products/react?utm_source=npm&utm_campaign=ej2-base)
-* [Vue.js](https://www.helatra.com/products/vue?utm_source=npm&utm_campaign=ej2-base)
-* [ASP.NET Core](https://www.helatra.com/products/aspnetcore?utm_source=npm&utm_campaign=ej2-base)
-* [ASP.NET MVC](https://www.helatra.com/products/aspnetmvc?utm_source=npm&utm_campaign=ej2-base)
+* [Angular](https://www.helatra.com/products/angular?utm_source=npm&utm_campaign=h2o-base)
+* [React](https://www.helatra.com/products/react?utm_source=npm&utm_campaign=h2o-base)
+* [Vue.js](https://www.helatra.com/products/vue?utm_source=npm&utm_campaign=h2o-base)
+* [ASP.NET Core](https://www.helatra.com/products/aspnetcore?utm_source=npm&utm_campaign=h2o-base)
+* [ASP.NET MVC](https://www.helatra.com/products/aspnetmvc?utm_source=npm&utm_campaign=h2o-base)
 
 ## Showcase Applications
 
-* [Diagram Builder](https://ej2.helatra.com/showcase/angular/diagrambuilder?utm_source=npm&utm_campaign=ej2-base)
-* [Expense Tracker](https://ej2.helatra.com/showcase/typescript/expensetracker?utm_source=npm&utm_campaign=ej2-base)
-* [IT Asset Management](https://ej2.helatra.com/showcase/vue/assetmanagement?utm_source=npm&utm_campaign=ej2-base)
-* [Loan Calculator](https://ej2.helatra.com/showcase/typescript/loancalculator?utm_source=npm&utm_campaign=ej2-base)
-* [Stock Chart](https://ej2.helatra.com/showcase/angular/stockchart?utm_source=npm&utm_campaign=ej2-base)
+* [Diagram Builder](https://h2o.helatra.com/showcase/angular/diagrambuilder?utm_source=npm&utm_campaign=h2o-base)
+* [Expense Tracker](https://h2o.helatra.com/showcase/typescript/expensetracker?utm_source=npm&utm_campaign=h2o-base)
+* [IT Asset Management](https://h2o.helatra.com/showcase/vue/assetmanagement?utm_source=npm&utm_campaign=h2o-base)
+* [Loan Calculator](https://h2o.helatra.com/showcase/typescript/loancalculator?utm_source=npm&utm_campaign=h2o-base)
+* [Stock Chart](https://h2o.helatra.com/showcase/angular/stockchart?utm_source=npm&utm_campaign=h2o-base)
 * [Story Estimator](https://aspdotnetcore.helatra.com/showcase/aspnetcore/story-estimator/)
-* [Web Mail](https://ej2.helatra.com/showcase/typescript/webmail?utm_source=npm&utm_campaign=ej2-base)
+* [Web Mail](https://h2o.helatra.com/showcase/typescript/webmail?utm_source=npm&utm_campaign=h2o-base)
 
 ## Key Features
 
@@ -85,16 +85,16 @@ The Essential<sup>®</sup> JS 2 is also offered in following list of frameworks.
 
 Product support is available for through following mediums.
 
-* Creating incident in Helatra<sup>®</sup> [Direct-trac](https://www.helatra.com/support/directtrac/incidents?utm_source=npm&utm_campaign=ej2-base) support system or [Community forum](https://www.helatra.com/forums/essential-js2?utm_source=npm&utm_campaign=ej2-base).
-* New [GitHub issue](https://github.com/helatra/ej2-javascript-ui-controls/issues/new).
-* Ask your query in [Stack Overflow](https://stackoverflow.com/) with tag `helatra` and `ej2`.
+* Creating incident in Helatra<sup>®</sup> [Direct-trac](https://www.helatra.com/support/directtrac/incidents?utm_source=npm&utm_campaign=h2o-base) support system or [Community forum](https://www.helatra.com/forums/essential-js2?utm_source=npm&utm_campaign=h2o-base).
+* New [GitHub issue](https://github.com/helatra/h2o-javascript-ui-controls/issues/new).
+* Ask your query in [Stack Overflow](https://stackoverflow.com/) with tag `helatra` and `h2o`.
 
 ## License
- Check the license detail [here](https://github.com/helatra/ej2-javascript-ui-controls/blob/master/license).
+ Check the license detail [here](https://github.com/helatra/h2o-javascript-ui-controls/blob/master/license).
 
 ## Changelog
 
-Check the changelog [here](https://ej2.helatra.com/documentation/release-notes/index/?utm_source=npm&utm_campaign=ej2-base).
+Check the changelog [here](https://h2o.helatra.com/documentation/release-notes/index/?utm_source=npm&utm_campaign=h2o-base).
 
     © Copyright 2024 Helatra<sup>®</sup> Inc. All Rights Reserved.
     The Helatra<sup>®</sup> Essential<sup>®</sup> Studio license and copyright applies to this distribution.

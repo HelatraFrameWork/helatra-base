@@ -155,7 +155,7 @@ describe('Animation # ', () => {
     });
 
 
-    describe('EJ2-499: delay time is greater than duration time # ', () => {
+    describe('H2O-499: delay time is greater than duration time # ', () => {
         let animeOption: AnimationOptions = null;
         beforeEach((done: () => void) => {
             animeObj.animate(element1, {
@@ -174,7 +174,7 @@ describe('Animation # ', () => {
         });
     });
 
-    describe('EJ2-594: animation for svg elements in IE browser # ', () => {
+    describe('H2O-594: animation for svg elements in IE browser # ', () => {
         let animeAttr: string = null;
         let element: HTMLElement = createElement('div', { id: 'anime' });
         describe('testing h-animate attribute # ', () => {
@@ -209,7 +209,7 @@ describe('Animation # ', () => {
             });
         });
 
-        describe('EJ2-940: animate method with begin and animation end on last frame # ', () => {
+        describe('H2O-940: animate method with begin and animation end on last frame # ', () => {
             let animeOption: AnimationOptions = null;
             beforeEach((done: () => void) => {
                 modifiedObj.animate(element2, {

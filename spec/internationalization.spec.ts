@@ -734,7 +734,7 @@ describe('Internationalization', () => {
             }));
         });
     });
-    describe('Cr-EJ2-10356 - Date parser returns invalid output instead of null value', () => {
+    describe('Cr-H2O-10356 - Date parser returns invalid output instead of null value', () => {
         it('Without special characters', () => {
             let intl: Internationalization = new Internationalization();
             intl.parseDate('12', { format:'WW' });

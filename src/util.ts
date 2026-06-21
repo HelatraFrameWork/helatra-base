@@ -49,7 +49,7 @@ export function setImmediate(handler: Function): Function {
     const num: any = new Uint16Array(5);
     const intCrypto: Crypto = window.msCrypto || window.crypto;
     intCrypto.getRandomValues(num);
-    let secret: string = 'ej2' + combineArray(num);
+    let secret: string = 'h2o' + combineArray(num);
     let messageHandler: Function = (event: any): void => {
         if (event.source === window && typeof event.data === 'string' && event.data.length <= 32 && event.data === secret) {
             handler();

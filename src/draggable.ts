@@ -7,6 +7,7 @@ import { Property, Complex, NotifyPropertyChanges, INotifyPropertyChanged, Event
 import { EventHandler } from './event-handler';
 import { ChildProperty } from './child-property';
 import { PositionModel, DraggableModel } from './draggable-model';
+export { PositionModel, DraggableModel } from './draggable-model';
 import { select, closest, setStyleAttribute, addClass, createElement } from './dom';
 import { extend, isUndefined, isNullOrUndefined, compareElementParent, isBlazor } from './util';
 const defaultPosition: PositionCoordinates = { left: 0, top: 0, bottom: 0, right: 0 };
